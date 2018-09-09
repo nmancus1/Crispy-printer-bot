@@ -5,7 +5,6 @@
  * using the .build method.  The toString() method uses String.format to provide a formatted line of printer information
  * that corresponds to the header printed in the main method.
  */
-
 public class Printer {
 
     private String deviceName;                  //Name of printer

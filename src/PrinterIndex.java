@@ -103,7 +103,6 @@ public class PrinterIndex {
             }
         }
     }
-
     /**
      * ovverrides object's toString, uses StringBuilder to construct a String
      * @return multi-line string containing the information of all printers in PrinterIndex

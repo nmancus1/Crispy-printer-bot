@@ -1,16 +1,32 @@
-
+/**
+ * Nick Mancuso
+ *
+ * This class represents a printer.  The preferred method of building printer objects is in the PrinterIndex class,
+ * using the .build method.  The toString() method uses String.format to provide a formatted line of printer information
+ * that corresponds to the header printed in the main method.
+ */
 
 public class Printer {
 
-    private String deviceName;
-    private String ipv4Address;
-    private String lastCommunication;
-    private String serialNumber;
-    private int pageCount;
-    private int blackCartridgePercent;
-    private int colorCartridgePercent;
+    private String deviceName;                  //Name of printer
+    private String ipv4Address;                 //ipv4 address of printer
+    private String lastCommunication;           //time of last communication
+    private String serialNumber;                //serial number
+    private int pageCount;                      //page count
+    private int blackCartridgePercent;          //black cartridge %
+    private int colorCartridgePercent;          //color cartridge %
 
-    public Printer(String deviceName, String ipv4Address, String lastCommunication, String serialNumber, int pageCount, int blackCartridgePercent, int colorCartridgePercent) {
+    /**
+     * @param deviceName - name of printer
+     * @param ipv4Address - ipv4 address
+     * @param lastCommunication - time of last communication
+     * @param serialNumber - serial number
+     * @param pageCount - page count
+     * @param blackCartridgePercent - black cartridge %
+     * @param colorCartridgePercent - color cartridge %
+     */
+    public Printer(String deviceName, String ipv4Address, String lastCommunication, String serialNumber,
+                   int pageCount, int blackCartridgePercent, int colorCartridgePercent) {
         this.deviceName = deviceName;
         this.ipv4Address = ipv4Address;
         this.lastCommunication = lastCommunication;
@@ -76,6 +92,7 @@ public class Printer {
         this.colorCartridgePercent = colorCartridgePercent;
     }
 
+    //Returns a formatted String corresponding to the header in main.
     @Override
     public String toString() {
         return String.format("\n%-20s %-20s %-20s %-20s %-20s %-20s %-20s\n",

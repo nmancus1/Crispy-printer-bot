@@ -5,17 +5,20 @@
  * and check toner levels.  displayPrinterIndex() will print all printer info in the index to the console, formatted.  Also
  * included is a console args option.
  *
- * ex: java Main -f printer.csv
+ * ex: java Crispy_Bot -f filename.csv
  *
  * Where the 'f' switch allows a user to input a file, and automatically have a list of the printers that are
- * low on toner displayed, for usage with scripts or cron.
+ * low on toner displayed, for usage with scripts or for cron jobs.  The output can be then piped to a text file.
+ *
+ * ex: $~date > text.txt && java Crispy_Bot -f printer.csv >> text.txt
+ *
  */
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class Crispy_Bot {
 
     public static void main(String[] args) {
 
@@ -100,13 +103,14 @@ public class Main {
                 "     *     After parsing and building the index, the user can choose to parse more .csv files to keep       *      \n" +
                 "     *     building the index, or display all printers in the index.  The check low toner level             *       \n" +
                 "     *     option will display only the printers that are low on toner, and specify which cartridge         * \n" +
-                "     *     to replace.                                                                                      *        \n" +
+                "     *     to replace.  This program can also be run directly from the command line to check toner          *        \n" +
+                "     *     levels, to be used with scripts. Ex: 'java Crispy_Bot -f filename.csv'                           *\n" +
                 "     ********************************************************************************************************       \n");
 
     }
 
     /**
-     * Tjis method simply prints a formatted header for the
+     * This method simply prints a formatted header for the
      * PrinterIndex's toString() method
      */
 
@@ -132,8 +136,7 @@ public class Main {
         csvFile = new File(args[1]);
         try {
             printerIndex.build(csvFile);
-            System.out.println("\n" + csvFile + " successfully parsed!\n");
-            System.out.println("The following printers have less than 10% toner level:\n");
+            System.out.println();
             printerIndex.checkToner();
 
         } catch (FileNotFoundException e) {

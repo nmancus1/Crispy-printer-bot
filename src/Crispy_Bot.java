@@ -10,7 +10,7 @@
  * Where the 'f' switch allows a user to input a file, and automatically have a list of the printers that are
  * low on toner displayed, for usage with scripts or for cron jobs.  The output can be then piped to a text file.
  *
- * ex: $~date > text.txt && java Crispy_Bot -f printer.csv >> text.txt
+ * ex: $~date > text.txt && java Crispy_Bot -f filename.csv >> text.txt
  *
  */
 

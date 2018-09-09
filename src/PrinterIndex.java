@@ -92,11 +92,11 @@ public class PrinterIndex {
 
             if (p.getBlackCartridgePercent() < 10) {
                 System.out.println(p.getDeviceName() + " has " + p.getBlackCartridgePercent()
-                        + "%" + " black toner remaining.");
+                        + "%" + " black toner remaining @ " + p.getLastCommunication());
             }
             if (p.getColorCartridgePercent() < 10) {
                 System.out.println(p.getDeviceName() + " has " + p.getColorCartridgePercent()
-                        + "%" + " color toner remaining.");
+                        + "%" + " color toner remaining @ " + p.getLastCommunication());
             }
             if ((p.getColorCartridgePercent() < 10) || (p.getBlackCartridgePercent() < 10)) {
                 System.out.println();
@@ -104,7 +104,7 @@ public class PrinterIndex {
         }
     }
     /**
-     * ovverrides object's toString, uses StringBuilder to construct a String
+     * Overrides object's toString, uses StringBuilder to construct a String
      * @return multi-line string containing the information of all printers in PrinterIndex
      *
      * ex:PrinterIndex.toString(); -or- sout(PrinterIndex)

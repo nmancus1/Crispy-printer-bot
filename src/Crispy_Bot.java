@@ -24,8 +24,12 @@ public class Crispy_Bot {
 
         //Check args[], if true then jump to cmdLineTonerCheck and exit
         if(args.length != 0) {
-            if (args[0].equalsIgnoreCase("-f")) {
+            if (args[0].equalsIgnoreCase("-f") && args.length == 2) {
                 cmdLineTonerCheck(args);
+                System.exit(0);
+            } else {
+                System.out.println("Invalid option. Use '-f' to print list of printers low on toner from .csv file\n" +
+                        "** ex: 'java Crispy_Bot -f filename.csv' ");
                 System.exit(0);
             }
         }

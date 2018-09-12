@@ -8,7 +8,7 @@ Mini Project Written Reflection
 1. Did you have the prerequisite skills (java programming) to complete the program?  Did you encounter technical hurdles?
 
 	I did have the prerequisite skills to complete this program.  There was no technical hurdles to overcome in this case.  
-Overall, this assignment was straighforward, assuming that I interpreted the vague requirements correctly.  I created two solutions to
+Overall, this assignment was straight forward, assuming that I interpreted the vague requirements correctly.  I created two solutions to
 the problem of monitoring the toner levels.  First, I created a CLI program that offered users several different options after parsing
 a .csv file, like to display the index of printers and check toner levels.  Second, I added a feature that allowed a user to enter command
 line arguements and the program would directly output a list  of printers that were low on toner. This output could then be piped to a logfile 
@@ -25,8 +25,8 @@ Example:
 
 2. Did the vague assignment instructions frustrate you?  Why or why not?  Be specific.
 
-	The vague assigment intructions did frustrate me a bit.  I always like as much detail as possible.  It is important to understand HOW a user intends
-to use a program, not just want they need it to do.  This is why i implemented a versitile program that employed both and interface and an automated 
+	The vague assignment instructions did frustrate me a bit.  I always like as much detail as possible.  It is important to understand HOW a user intends
+to use a program, not just want they need it to do.  This is why i implemented a versatile program that employed both and interface and an automated
 option.  In addition, I attempted to make the program fairly modular, so that if the program wasn't up to expectations, parts of it (objects, etc) could be 
 reused again.
 
@@ -34,6 +34,6 @@ reused again.
 
 	I start with a quick sketch of the basic flow of the program, then produce UML diagrams to really help visualize how this project can come together (the UML 
 diagrams are located in the /src folder forl this project).  Next, I begin creating the objects and data structures needed to solve the problem most efficiently. 
-Along the way, I constantly test each objects, and its dependencies, in addtion to refactoring frequently for more efficient code. Finally, I produce the actual 
+Along the way, I constantly test each objects, and its dependencies, in addition to refactoring frequently for more efficient code. Finally, I produce the actual
 driver program, and further test that, until the program meets the requirements and has sufficient error checking.  Throughout the entire process, I use git / 
 GitHub for version control, in case of any regressions or the need for different branches.

@@ -33,7 +33,7 @@ reused again.
 3.How do you approach a programming assignment like this?  Try to elaborate on each of the steps you take - there is no wrong answer!
 
 	I start with a quick sketch of the basic flow of the program, then produce UML diagrams to really help visualize how this project can come together (the UML 
-diagrams are located in the /src folder forl this project).  Next, I begin creating the objects and data structures needed to solve the problem most efficiently. 
+diagrams are located in the /src folder for this project).  Next, I begin creating the objects and data structures needed to solve the problem most efficiently.
 Along the way, I constantly test each objects, and its dependencies, in addition to refactoring frequently for more efficient code. Finally, I produce the actual
 driver program, and further test that, until the program meets the requirements and has sufficient error checking.  Throughout the entire process, I use git / 
 GitHub for version control, in case of any regressions or the need for different branches.

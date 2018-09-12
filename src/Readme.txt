@@ -11,7 +11,7 @@ Mini Project Written Reflection
 Overall, this assignment was straight forward, assuming that I interpreted the vague requirements correctly.  I created two solutions to
 the problem of monitoring the toner levels.  First, I created a CLI program that offered users several different options after parsing
 a .csv file, like to display the index of printers and check toner levels.  Second, I added a feature that allowed a user to enter command
-line arguements and the program would directly output a list  of printers that were low on toner. This output could then be piped to a logfile 
+line arguments and the program would directly output a list  of printers that were low on toner. This output could then be piped to a logfile
 or sent in an automated email on a set interval using a script and cron.
 
 Example:

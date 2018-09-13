@@ -12,14 +12,12 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class PrinterIndex {
 
-    //Declare and initialize arrayList to hold printer objects
-    ArrayList<Printer> printerList = new ArrayList<>();
+    //Declare and initialize Hashmap to hold printer objects
     HashMap<String, Printer> printerHashMap = new HashMap<>();
 
     //Default constructor

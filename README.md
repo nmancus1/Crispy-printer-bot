@@ -41,7 +41,7 @@ Example:
 
 
 - Written with Java, so this program is OS agnostic
-- Great ascii text!
+- Great ascii art!
 
 Documentation
 =============
